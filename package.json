@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "ofetch": "^1.1.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "bun-types": "^0.6.9"
+  },
+  "name": "domain-sync",
+  "module": "index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
