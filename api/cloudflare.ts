@@ -17,7 +17,7 @@ const zoneSchema = z.object({
     type: z.string(),
     development_mode: z.number(),
     name_servers: z.array(z.string()),
-    original_name_servers: z.array(z.string()),
+    original_name_servers: z.array(z.string()).nullable(),
     original_registrar: z.string().nullable(),
     original_dnshost: z.string().nullable(),
     modified_on: z.string(),
