@@ -32,7 +32,14 @@ const domain = z.object({
 })
 
 export async function listDomains() {
-  return await api('/').then(domains => z.array(domain).parse(domains))
+  const domains: Array<typeof domain['_output']> = []
+  let chunk
+  let page = 1
+  do {
+    chunk = await api('/', { query: { page: page++ } }).then(domains => z.array(domain).parse(domains))
+    domains.push(...chunk)
+  } while (chunk.length)
+  return domains
 }
 
 export async function setNameservers(domain: string, nameservers: string[]) {
