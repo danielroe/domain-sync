@@ -28,7 +28,7 @@ const zoneSchema = z.object({
       custom_certificate_quota: z.number(),
       page_rule_quota: z.number(),
       phishing_detected: z.boolean(),
-      multiple_railguns_allowed: z.boolean(),
+      multiple_railguns_allowed: z.boolean().optional(),
     }),
     owner: z.object({
       id: z.string().nullable(),
