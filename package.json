@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "ofetch": "^1.1.0",
-    "zod": "^3.21.4"
+    "zod": "^4.0.0"
   },
   "devDependencies": {
     "bun-types": "1.2.18"
