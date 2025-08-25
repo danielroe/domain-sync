@@ -4,7 +4,7 @@
     "zod": "^4.0.0"
   },
   "devDependencies": {
-    "bun-types": "1.2.20"
+    "bun-types": "1.2.21"
   },
   "name": "domain-sync",
   "module": "index.ts",
